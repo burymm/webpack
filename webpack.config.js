@@ -8,7 +8,8 @@ module.exports = {
     filename: 'bundle.js',
   },
   devServer: {
-    index: 'index.html'
+    index: 'index.html',
+    watchContentBase: true,
   },
   watch: true,
   module: {
