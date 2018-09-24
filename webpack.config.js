@@ -25,6 +25,9 @@ module.exports = {
           includePaths: []
         }
       }]
+    }, {
+      test: /\.css$/,
+      use: ["style-loader", "css-loader", "postcss-loader"]
     }]
   },
   plugins: [
@@ -32,6 +35,7 @@ module.exports = {
     new webpack.WatchIgnorePlugin([
       path.join(__dirname, "node_modules")
     ]),
+    require('autoprefixer')
   ]
   
 };
