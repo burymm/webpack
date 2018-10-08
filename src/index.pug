@@ -1,0 +1,22 @@
+doctype
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        title "Pug demo"
+    body
+        div.wrapper
+            h1 "Test"
+        div.main
+            - var x = 5;
+            div
+                ul
+                    - for (var i=1; i<=x; i++) {
+                    li = i + ". Hello"
+                    - }
+        - var droids = ["R2D2", "C3PO", "BB8"];
+        div
+            h1 Famous Droids from Star Wars
+            for name in droids
+                div.card
+                    h2= name
+
