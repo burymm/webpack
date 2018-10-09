@@ -7,13 +7,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: {
     index: path.join(src, 'index.pug'),
-    bundle: './index.js',
+    bundle: path.join(src, 'index.js'),
   },
   output: {
     filename: 'bundle.js',
   },
   devServer: {
-    inline: true,
     watchContentBase: true,
   },
   watch: true,

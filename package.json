@@ -2,7 +2,7 @@
   "name": "webpack2",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development"
   },

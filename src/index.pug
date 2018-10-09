@@ -3,6 +3,7 @@ html(lang="en")
     head
         meta(charset="utf-8")
         title "Pug demo"
+        script(src='./bundle.js')
     body
         div.wrapper
             h1 "Test"
@@ -10,9 +11,9 @@ html(lang="en")
             - var x = 5;
             div
                 ul
-                    - for (var i=1; i<=x; i++) {
-                    li = i + ". Hello"
-                    - }
+                    -for (var i=1; i<=x; i++) {
+                    li=i + ". Hello"
+                    -}
         - var droids = ["R2D2", "C3PO", "BB8"];
         div
             h1 Famous Droids from Star Wars
